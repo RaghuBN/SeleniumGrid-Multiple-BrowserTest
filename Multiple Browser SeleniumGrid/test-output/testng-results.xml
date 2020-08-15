@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="1" failed="0" total="3" passed="2">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Suite" duration-ms="601644" started-at="2020-08-15T11:03:58Z" finished-at="2020-08-15T11:14:00Z">
+    <groups>
+    </groups>
+    <test name="Chrome Test" duration-ms="49266" started-at="2020-08-15T11:03:58Z" finished-at="2020-08-15T11:04:47Z">
+      <class name="GridDemo.SeleniumMultiBrowserTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:GridDemo.SeleniumMultiBrowserTest@3c5a99da]" name="setUp" is-config="true" duration-ms="14176" started-at="2020-08-15T16:33:58Z" finished-at="2020-08-15T16:34:12Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4100]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="appleSite()[pri:0, instance:GridDemo.SeleniumMultiBrowserTest@3c5a99da]" name="appleSite" duration-ms="34449" started-at="2020-08-15T16:34:12Z" finished-at="2020-08-15T16:34:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appleSite -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:GridDemo.SeleniumMultiBrowserTest@3c5a99da]" name="tearDown" is-config="true" duration-ms="614" started-at="2020-08-15T16:34:47Z" finished-at="2020-08-15T16:34:47Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GridDemo.SeleniumMultiBrowserTest -->
+    </test> <!-- Chrome Test -->
+    <test name="Firefox Test" duration-ms="56590" started-at="2020-08-15T11:03:58Z" finished-at="2020-08-15T11:04:55Z">
+      <class name="GridDemo.SeleniumMultiBrowserTest">
+        <test-method status="PASS" signature="setUp(java.lang.String)[pri:0, instance:GridDemo.SeleniumMultiBrowserTest@129a8472]" name="setUp" is-config="true" duration-ms="26106" started-at="2020-08-15T16:33:58Z" finished-at="2020-08-15T16:34:24Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4200]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="appleSite()[pri:0, instance:GridDemo.SeleniumMultiBrowserTest@129a8472]" name="appleSite" duration-ms="25403" started-at="2020-08-15T16:34:24Z" finished-at="2020-08-15T16:34:49Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appleSite -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:GridDemo.SeleniumMultiBrowserTest@129a8472]" name="tearDown" is-config="true" duration-ms="5056" started-at="2020-08-15T16:34:49Z" finished-at="2020-08-15T16:34:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GridDemo.SeleniumMultiBrowserTest -->
+    </test> <!-- Firefox Test -->
+    <test name="InternetExplorer Test" duration-ms="601644" started-at="2020-08-15T11:03:58Z" finished-at="2020-08-15T11:14:00Z">
+      <class name="GridDemo.SeleniumMultiBrowserTest">
+        <test-method status="FAIL" signature="setUp(java.lang.String)[pri:0, instance:GridDemo.SeleniumMultiBrowserTest@e580929]" name="setUp" is-config="true" duration-ms="0" started-at="2020-08-15T16:33:58Z" finished-at="2020-08-15T16:33:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[4300]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.WebDriverException">
+            <message>
+              <![CDATA[Unable to parse remote response: ]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.WebDriverException: Unable to parse remote response: 
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:115)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:74)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:136)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.startSession(RemoteWebDriver.java:213)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:131)
+	at org.openqa.selenium.remote.RemoteWebDriver.<init>(RemoteWebDriver.java:144)
+	at GridDemo.SeleniumMultiBrowserTest.setUp(SeleniumMultiBrowserTest.java:64)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeConfigurationMethod(Invoker.java:514)
+	at org.testng.internal.Invoker.invokeConfigurations(Invoker.java:215)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:589)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:400)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: org.openqa.selenium.json.JsonException: Expected to read a START_MAP but instead have: END. Last 0 characters read: 
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-OR6VU5V', ip: '172.20.10.4', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_202'
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.json.JsonInput.expect(JsonInput.java:290)
+	at org.openqa.selenium.json.JsonInput.beginObject(JsonInput.java:220)
+	at org.openqa.selenium.json.MapCoercer.lambda$apply$1(MapCoercer.java:64)
+	at org.openqa.selenium.json.JsonTypeCoercer.lambda$null$6(JsonTypeCoercer.java:145)
+	at org.openqa.selenium.json.JsonTypeCoercer.coerce(JsonTypeCoercer.java:126)
+	at org.openqa.selenium.json.Json.toType(Json.java:69)
+	at org.openqa.selenium.json.Json.toType(Json.java:55)
+	at org.openqa.selenium.json.Json.toType(Json.java:50)
+	at org.openqa.selenium.remote.ProtocolHandshake.createSession(ProtocolHandshake.java:112)
+	... 29 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.WebDriverException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="SKIP" signature="appleSite()[pri:0, instance:GridDemo.SeleniumMultiBrowserTest@e580929]" name="appleSite" duration-ms="2" started-at="2020-08-15T16:44:00Z" finished-at="2020-08-15T16:44:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- appleSite -->
+        <test-method status="SKIP" signature="tearDown()[pri:0, instance:GridDemo.SeleniumMultiBrowserTest@e580929]" name="tearDown" is-config="true" duration-ms="0" started-at="2020-08-15T16:44:00Z" finished-at="2020-08-15T16:44:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- GridDemo.SeleniumMultiBrowserTest -->
+    </test> <!-- InternetExplorer Test -->
+  </suite> <!-- Suite -->
+</testng-results>

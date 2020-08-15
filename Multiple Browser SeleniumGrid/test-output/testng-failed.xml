@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <parameter name="Port" value="4300"/>
+  <test name="Chrome Test">
+    <parameter name="Port" value="4100"/>
+    <classes>
+      <class name="GridDemo.SeleniumMultiBrowserTest"/>
+    </classes>
+  </test> <!-- Chrome Test -->
+  <test name="Firefox Test">
+    <parameter name="Port" value="4200"/>
+    <classes>
+      <class name="GridDemo.SeleniumMultiBrowserTest"/>
+    </classes>
+  </test> <!-- Firefox Test -->
+  <test name="InternetExplorer Test">
+    <parameter name="Port" value="4300"/>
+    <classes>
+      <class name="GridDemo.SeleniumMultiBrowserTest"/>
+    </classes>
+  </test> <!-- InternetExplorer Test -->
+  <test name="InternetExplorer Test(failed)" parallel="tests">
+    <parameter name="Port" value="4300"/>
+    <classes>
+      <class name="GridDemo.SeleniumMultiBrowserTest">
+        <methods>
+          <include name="appleSite"/>
+          <include name="tearDown"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- GridDemo.SeleniumMultiBrowserTest -->
+    </classes>
+  </test> <!-- InternetExplorer Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
